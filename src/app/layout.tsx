@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Annie_Use_Your_Telescope } from "next/font/google";
 import "../style/globals.css";
 import "../style/custom.css";
+import Image from "next/image";
 
 
 const inter = Annie_Use_Your_Telescope({
@@ -21,7 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <div className="absolute -z-[9999] w-full">
+        <Image src={"/assets/bg.jpg"} className="backGround w-full" width={1000} height={1000} alt={"bg"}/>
+      </div>
+        <div className="backGround">
+           {children}
+        </div> 
+           </body>
+     
     </html>
   );
 }
