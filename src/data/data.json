@@ -1,0 +1,69 @@
+{
+  "name": "Rishvan M",
+  "designations": [
+    "Full Stack Developer",
+    "Backend Developer",
+    "Flutter Developer"
+  ],
+  "social_icons": [
+    {
+      "icon": "github",
+      "url": "http://github.com/Rishvan"
+    },
+    {
+      "icon": "linkedin",
+      "url": "http://linkedin.com/in/rishvan-m-8805a623a"
+    },
+    {
+      "icon": "instagram",
+      "url": "https://www.instagram.com/r___van_"
+    },
+    {
+      "icon": "whatsapp",
+      "url": "https://wa.me/+919895465354"
+    }
+  ],
+  "cards": [
+    {
+      "title": "Projects",
+      "description": "",
+      "url": "./website/maintenance"
+    },
+    {
+      "title": "About Me",
+      "description": "",
+      "url": "./website/maintenance"
+    },
+    {
+      "title": "Education",
+      "description": "",
+      "url": "./website/maintenance"
+    }
+  ],
+  "projects": [
+    
+    {
+      "id" : 0,
+      "title": "Amal CS Hub",
+      "description": "test description",
+      "lagunages": ["Flutter", "laravel"],
+      "url": "amalCSHub"
+    },
+    {
+      "id" : 1,
+      "title": "Animal",
+      "description": "test description",
+      "lagunages": ["Parot", "Cock"],
+      "url": "animal"
+    },
+    {
+      "id" : 2,
+      "title": "Animal test",
+      "description": "sample description",
+      "lagunages": ["nice", "view"],
+      "url": "animal"
+    }
+    
+    
+  ]
+}
