@@ -32,7 +32,7 @@ export default function Home() {
             {data.social_icons.map((item: SocialTcons, i) => {
               return (
                 // <Link to={`${item.url}`} target="_blank"  key={i} >
-                <button className="w-8 aspect-square mx-2 hover:scale-105 transition-transform">
+                <button className="w-8 aspect-square mx-2 hover:scale-105 transition-transform" key={i}>
                   <Image
                     src={`assets/icons/${item.icon}.svg`}
                     width={500}
@@ -48,12 +48,12 @@ export default function Home() {
         <div className="flex gap-5 py-4">
         {data.cards.map((card: Cards, i) => {
           return (
-            <>
+            <div key={i}>
              <TitleCard
              title={card.title}
              url="#"
              />
-            </>
+            </div>
           );
         })}
       </div>
