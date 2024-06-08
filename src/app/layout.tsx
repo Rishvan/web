@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <div className="absolute -z-[9999] w-full">
-        <Image src={"/assets/bg.jpg"} className="backGround w-full" width={1000} height={1000} alt={"bg"}/>
+        <Image src={"./assets/bg.jpg"} className="backGround w-full" width={1000} height={1000} alt={"bg"}/>
       </div>
         <div className="backGround">
            {children}
