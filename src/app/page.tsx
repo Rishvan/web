@@ -31,7 +31,7 @@ export default function Home() {
           <li>
             {data.social_icons.map((item: SocialTcons, i) => {
               return (
-                // <Link to={`${item.url}`} target="_blank"  key={i} >
+                <Link href={`${item.url}`} target="_blank"  key={i} >
                 <button className="w-8 aspect-square mx-2 hover:scale-105 transition-transform" key={i}>
                   <Image
                     src={`assets/icons/${item.icon}.svg`}
@@ -40,7 +40,7 @@ export default function Home() {
                     alt="Picture of the author"
                   />
                 </button>
-                // </Link>
+                </Link>
               );
             })}
           </li>
