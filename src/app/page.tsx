@@ -53,7 +53,13 @@ export default function Home() {
           {data.cards.map((card: Cards, i) => {
             return (
               <div key={i}>
-                <TitleCard title={card.title} url="#" />
+                <Link href={`${card.url}`}>
+                  <button className="w-max sm:w-full hover:scale-105 test-style-normal transition-transform  rounded-xl flex flex-col justify-center items-center p-4  cardStyle">
+                    <p className="text-white  font-bold text-xl md:text-3xl">
+                      {card.title}
+                    </p>
+                  </button>
+                </Link>
               </div>
             );
           })}
