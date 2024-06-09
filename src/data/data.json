@@ -2,8 +2,8 @@
   "name": "Rishvan M",
   "designations": [
     "Full Stack Developer",
-    "Backend Developer",
-    "Flutter Developer"
+    "Flutter Developer",
+    "Graphic Designer"
   ],
   "social_icons": [
     {
@@ -25,45 +25,65 @@
   ],
   "cards": [
     {
+      "title": "Activities",
+      "description": "",
+      "url": "/activity"
+    },
+    {
       "title": "Projects",
       "description": "",
-      "url": "./website/maintenance"
+      "url": "/projects"
     },
     {
-      "title": "About Me",
+      "title": "About",
       "description": "",
       "url": "/about"
+    }
+  ],
+  "activities": [
+    {
+      "id": 0,
+      "title" : "Sample title 1",
+      "date" : "March 2016",
+      "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,",
+      "url" : "www.google.com"
     },
     {
-      "title": "Education",
-      "description": "",
-      "url": "./website/maintenance"
+      "id": 1,
+      "title" : "Sample title 2",
+      "date" : "March 2016",
+     "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
+     
+    },
+    {
+      "id": 2,
+      "title" : "Sample title 2",
+      "date" : "March 2016",
+     "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
+     
     }
   ],
   "projects": [
-    
     {
-      "id" : 0,
+      "id": 0,
       "title": "Amal CS Hub",
       "description": "test description",
       "lagunages": ["Flutter", "laravel"],
       "url": "amalCSHub"
     },
     {
-      "id" : 1,
+      "id": 1,
       "title": "Animal",
       "description": "test description",
       "lagunages": ["Parot", "Cock"],
       "url": "animal"
     },
     {
-      "id" : 2,
+      "id": 2,
       "title": "Animal test",
       "description": "sample description",
       "lagunages": ["nice", "view"],
       "url": "animal"
     }
-    
-    
   ]
 }

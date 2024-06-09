@@ -48,7 +48,7 @@ export default function Home() {
           </li>
         </ul>
         <div className="flex gap-5 py-4">
-          {data.cards.map((card: Cards, i) => {
+          {data.cards && data.cards.map((card: Cards, i) => {
             return (
               <div key={i}>
                 <Link href={`${card.url}`}>

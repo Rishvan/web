@@ -23,3 +23,12 @@ type Project = {
   languages? : string[]
   url?:string
 }
+
+
+type ActivityType={
+  id : number
+  date?:string
+  title : string
+  description:string
+  url? :string
+}
