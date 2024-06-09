@@ -4,10 +4,9 @@ import "../style/globals.css";
 import "../style/custom.css";
 import Image from "next/image";
 
-
 const inter = Annie_Use_Your_Telescope({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -22,15 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      {/* <div className="absolute -z-[9999] w-full">
-        <Image src={"/assets/bg.jpg"} className="backGround w-full object-cover" width={1000} height={1000} alt={"bg"}/>
-      </div> */}
-        {/* <div className="backGround"> */}
-           {children}
-        {/* </div>  */}
-           </body>
-     
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

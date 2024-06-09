@@ -1,31 +1,11 @@
 
-/* .annie-font {
-    font-family: "Annie Use Your Telescope", cursive;
-    font-weight: 400;
-    font-style: normal;
-} */
 .backGround {
   @apply h-screen bg-gray-800 bg-blend-multiply bg-cover sm:bg-right-top bg-opacity-75;
 }
-.cardStyle{
-  @apply bg-gradient-to-br from-[#FFFFFF4D] to-[#6CA4D44D] backdrop-filter drop-shadow-md backdrop-blur-md  gap-1 ;
+.cardStyle {
+  @apply bg-gradient-to-br from-[#FFFFFF4D] to-[#6CA4D44D] backdrop-filter drop-shadow-md backdrop-blur-md  gap-1;
 }
 
-body{
+body {
   @apply backGround bg-center bg-[url('../../public/assets/bg.jpg')];
 }
-
-.silkscreen-regular {
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.silkscreen-bold {
-  font-family: "Silkscreen", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-.main-title {
-   @apply  silkscreen-bold font-title;
-  }
