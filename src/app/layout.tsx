@@ -23,12 +23,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div className="absolute -z-[9999] w-full">
-        <Image src={"./assets/bg.jpg"} className="backGround w-full object-cover" width={1000} height={1000} alt={"bg"}/>
-      </div>
-        <div className="backGround">
+      {/* <div className="absolute -z-[9999] w-full">
+        <Image src={"/assets/bg.jpg"} className="backGround w-full object-cover" width={1000} height={1000} alt={"bg"}/>
+      </div> */}
+        {/* <div className="backGround"> */}
            {children}
-        </div> 
+        {/* </div>  */}
            </body>
      
     </html>

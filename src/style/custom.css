@@ -12,7 +12,7 @@
 }
 
 body{
-  @apply backGround bg-center ;
+  @apply backGround bg-center bg-[url('../assets/bg.jpg')];
 }
 
 .silkscreen-regular {
