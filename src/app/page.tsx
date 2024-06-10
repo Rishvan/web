@@ -11,6 +11,7 @@ export default function Home() {
         {data.name.split("").map((e) => {
           return (
             <p
+            key={e}
               className={e == "." ? "animate-bounce" : "hover:scale-110" +  `ease-linear duration-300`}
             >
               {e ?? ""}
