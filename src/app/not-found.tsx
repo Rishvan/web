@@ -7,9 +7,10 @@ export default function NotFound() {
       <div className="flex flex-col justify-center h-full w-full items-center gap-4">
         <div>
           <p
-            className={`${silkscreen.className} text-2xl md:text-4xl text-center`}
+            className={`text-2xl md:text-4xl text-center flex gap-2 items-center justify-center`}
           >
-            {`404! Page not found`}
+            {/* <span className={`${silkscreen.className}`}>{`404!`}</span> */}
+            <span>404! Page not found</span>
           </p>
         </div>
 
@@ -24,11 +25,11 @@ export default function NotFound() {
           fill="none"
           viewBox="0 0 14 10"
         >
-          <path
+         <path
             stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>

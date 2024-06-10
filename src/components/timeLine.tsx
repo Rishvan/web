@@ -14,7 +14,7 @@ function CustomTimeline({ item, last }: Props) {
       </TimelineSeparator>
 
       {
-        <li className="mb-6 ms-4 pl-2">
+        <div className="mb-6 ms-4 pl-2">
           {item.date && (
             <time className="mb-1 text-lg md:text-xl font-normal leading-none text-gray-40">
               {item.date}
@@ -42,15 +42,15 @@ function CustomTimeline({ item, last }: Props) {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
             </Link>
           )}
-        </li>
+        </div>
       }
     </TimelineItem>
   );
