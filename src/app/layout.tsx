@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Annie_Use_Your_Telescope } from "next/font/google";
+import { Rajdhani } from "next/font/google";
 import "../style/globals.css";
 import "../style/custom.css";
 import Image from "next/image";
+import Particles from "@/components/particles";
 
-const inter = Annie_Use_Your_Telescope({
+const inter = Rajdhani({
   subsets: ["latin"],
   weight: "400",
 });
@@ -21,7 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      
+      <body className={inter.className}>
+      <Particles
+        className="absolute inset-0 -z-10 animate-fade-in"
+        quantity={100}
+      />
+        {children}</body>
     </html>
   );
 }
