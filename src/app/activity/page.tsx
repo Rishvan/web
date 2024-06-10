@@ -1,14 +1,18 @@
+"use client";
 import _ from "lodash";
 import { Timeline } from "@mui/lab";
 import CustomTimeline from "@/components/timeLine";
 import data from "../../data/data.json";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Activity() {
+  const router = useRouter();
+
   return (
     <section className="h-screen text-white pl-8 pr-4 py-20 md:px-28 md:py-20 flex flex-col gap-5 ">
-      <Link
-        href={`/`}
+      <button
+        onClick={router.back}
         className="flex  items-center gap-2  text-2xl md:text-3xl font-extrabold w-max"
       >
         <svg
@@ -27,11 +31,9 @@ export default function Activity() {
           />
         </svg>
         home
-      </Link>
+      </button>
 
       <p className="text-center text-3xl">Activities</p>
-
-
 
       <div className="p-2 overflow-x-hidden overflow-y-scroll w-full flex gap-8 flex-col">
         <Timeline
