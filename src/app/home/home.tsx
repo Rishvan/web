@@ -64,7 +64,7 @@ export default function HomePage() {
           })}
         </ul>
       </div>
-      <div className="flex md:justify-between w-full flex-col md:flex-row gap-2 pb-5 ">
+      <div className="flex md:justify-between w-full flex-col md:flex-row gap-2 pb-12 ">
         <div className="flex gap-3 md:gap-12">
           {data.cards &&
             data.cards.map((card: Cards, i) => {
