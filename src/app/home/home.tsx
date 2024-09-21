@@ -64,7 +64,7 @@ export default function HomePage() {
           })}
         </ul>
       </div>
-      <div className="flex md:justify-between w-full flex-col md:flex-row gap-2 pb-12 ">
+      <div className="flex md:justify-between w-full flex-col md:flex-row gap-2 pb-20 ">
         <div className="flex gap-3 md:gap-12">
           {data.cards &&
             data.cards.map((card: Cards, i) => {
@@ -79,7 +79,7 @@ export default function HomePage() {
               );
             })}
         </div>
-        <div className="flex flex-col md:flex-row gap-2 md:gap-12">
+        <div className="flex flex-col md:flex-row gap-1 md:gap-12">
           <div>
             {data.social_icons.map((item: SocialTcons, i) => {
               return (
