@@ -26,9 +26,9 @@ export default function About() {
     <section className="h-screen overflow-hidden relative">
       <Header title="About" />
       <div className="h-[85vh] overflow-scroll w-full  text-white">
-        <div className="flex flex-col h-full justify-between pb-12">
-          <div className="p-8 w-full h-full text-sm lg:text-xl lg:w-3/4  text-justify lg:p-16 ">
-            {aboutMe}
+        <div className="flex flex-col h-full justify-between pb-12 ">
+          <div className="p-8 w-full h-full text-sm lg:text-xl   text-justify lg:p-16 flex justify-center">
+            <p>{aboutMe}</p>
           </div>
           {/* <div>languages using</div> */}
           <div className="w-full overflow-x-hidden py-12">
