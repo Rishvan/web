@@ -6,6 +6,7 @@
     "Graphic Designer"
   ],
   "mobile-designations": ["Software Developer"],
+  "aboutMe": "I am a dedicated software developer with expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js) and Flutter, specializing in building dynamic, responsive, and scalable web and mobile applications. I utilize tools like Redux for the MERN stack and BLoC in Flutter to ensure efficient state management and clean architecture. Beyond development, I am curious about cutting-edge technologies like Augmented Reality (AR), Machine Learning (ML), and Artificial Intelligence (AI), which inspire me to explore innovative solutions and future possibilities in app development. With a commitment to writing clean, maintainable code and staying current with industry trends, I strive to create impactful applications that solve real-world problems and enhance user experiences.",
   "social_icons": [
     {
       "icon": "github",
