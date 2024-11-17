@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Rajdhani } from "next/font/google";
-import "../style/globals.css";
+import "../app/globals.css";
 import "../style/custom.css";
 import Image from "next/image";
 import Particles from "@/components/particles";
