@@ -5,9 +5,7 @@
     "Flutter Developer",
     "Graphic Designer"
   ],
-  "mobile-designations": [
-    "Software Developer"
-  ],
+  "mobile-designations": ["Software Developer"],
   "social_icons": [
     {
       "icon": "github",
@@ -46,61 +44,44 @@
   "activities": [
     {
       "id": 0,
-      "title" : "Sample title 1",
-      "date" : "March 2016",
-      "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,",
-      "url" : "www.google.com"
+      "title": "Sample title 1",
+      "date": "March 2016",
+      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,",
+      "url": "www.google.com"
     },
     {
       "id": 1,
-      "title" : "Sample title 2",
-      "date" : "March 2016",
-     "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
-     
+      "title": "Sample title 2",
+      "date": "March 2016",
+      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
     },
     {
       "id": 2,
-      "title" : "Sample title 2",
-      "date" : "March 2016",
-     "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
-     
+      "title": "Sample title 2",
+      "date": "March 2016",
+      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
     },
     {
       "id": 3,
-      "title" : "Sample title 2",
-      "date" : "March 2016",
-     "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
-     
+      "title": "Sample title 2",
+      "date": "March 2016",
+      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
     },
     {
       "id": 4,
-      "title" : "Sample title 2",
-      "date" : "March 2016",
-     "description" : " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
-     
+      "title": "Sample title 2",
+      "date": "March 2016",
+      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
     }
   ],
   "projects": [
     {
       "id": 0,
       "title": "Amal CS Hub",
-      "description": "test description",
-      "lagunages": ["Flutter", "laravel"],
+      "subTitle": "The Computer Science Department App",
+      "description": "The Computer Science Department app offers a comprehensive platform for students. Access study materials, a question bank, and stay updated with course and faculty details. Explore a gallery showcasing department activities and find important links to enhance your academic journey.",
+      "languages": ["Flutter", "laravel"],
       "url": "amalCSHub"
-    },
-    {
-      "id": 1,
-      "title": "Animal",
-      "description": "test description",
-      "lagunages": ["Parot", "Cock"],
-      "url": "animal"
-    },
-    {
-      "id": 2,
-      "title": "Animal test",
-      "description": "sample description",
-      "lagunages": ["nice", "view"],
-      "url": "animal"
     }
   ]
 }

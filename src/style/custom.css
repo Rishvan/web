@@ -1,16 +1,18 @@
-
 .backGround {
   @apply h-screen bg-gray-800 bg-blend-multiply bg-cover sm:bg-right-top bg-opacity-75;
 }
 .cardStyle {
-  @apply bg-gradient-to-br from-[#FFFFFF4D] to-[#6CA4D44D] backdrop-filter drop-shadow-md backdrop-blur-md gap-1  rounded-xl;
+  @apply bg-gradient-to-br from-[#FFFFFF4D] to-[#6CA4D44D] backdrop-filter drop-shadow-md backdrop-blur-md gap-1  rounded-3xl  bg-gray-900 md:w-[35vw] lg:w-[20vw] aspect-square  items-center;
 }
 
 body {
   @apply backGround bg-center bg-[url('../../public/assets/bg.jpg')];
 }
 
-
 .timeline-button {
-  @apply inline-flex items-center px-4 py-2 text-lg font-bold text-white  cardStyle ;
+  @apply inline-flex items-center px-4 py-2 text-lg font-bold text-white  cardStyle;
+}
+
+::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
 }
