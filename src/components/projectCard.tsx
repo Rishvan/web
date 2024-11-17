@@ -42,7 +42,8 @@ export default function ProjectCard({
         {/* <h3 className="text-2xl font-extrabold tracking-widest cursor-pointer">
           {title}
         </h3> */}
-        <p className="text-sm mt-2 cursor-pointer">{description}</p>
+        <p className="text-sm mt-2 cursor-pointer select-none">{description}</p>
+        <p className="text-sm mt-2 cursor-pointer select-none underline">{"Languages"}</p>
         {languages && languages.length && (
           <p className="text-md mt-2 p-1 bg-blue-500 bg-blend-saturation font-semibold leading-6 tracking-widest rounded-lg px-2 cursor-pointer">
             {languages.join(",")}
