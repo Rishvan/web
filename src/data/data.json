@@ -83,6 +83,14 @@
       "description": "The Computer Science Department app offers a comprehensive platform for students. Access study materials, a question bank, and stay updated with course and faculty details. Explore a gallery showcasing department activities and find important links to enhance your academic journey.",
       "languages": ["Flutter", "laravel"],
       "url": "amalCSHub"
+    },
+    {
+      "id": 1,
+      "title": "Personal Portfolio",
+      "subTitle": "My Personal Portfolio Website",
+      "description": "Personal website using Next.js to highlight my professional journey, showcasing my projects, skills, and ongoing activities. It's a dynamic platform reflecting my creativity and technical expertise.",
+      "languages": ["Next JS"],
+      "url": "portfolio"
     }
   ]
 }
