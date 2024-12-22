@@ -8,19 +8,33 @@ export default function About() {
   const { aboutMe } = data;
   const items = [
     "html",
+    "-",
     "css",
+    "-",
     "react js",
+    "-",
     "sass",
+    "-",
     "next js",
+    "-",
     "flutter",
+    "-",
     "redux",
+    "-",
     "gitlab",
+    "-",
     "laravel",
+    "-",
     "blade",
+    "-",
     "node js",
+    "-",
     "github",
+    "-",
     "type script",
+    "-",
     "java script",
+    "-",
   ];
   return (
     <section className="h-screen overflow-hidden relative">
@@ -40,9 +54,9 @@ export default function About() {
             <p>{aboutMe}</p>
           </div>
           {/* <div>languages using</div> */}
-          {/* <div className="w-full overflow-x-hidden py-12">
+          <div className="w-full overflow-x-hidden py-12">
             <motion.div
-              className="flex gap-12 md:gap-64 w-max"
+              className="flex gap-12 w-max"
               animate={{ x: ["0%", "-50%"] }}
               transition={{ duration: 100, ease: "linear", repeat: Infinity }}
             >
@@ -55,7 +69,7 @@ export default function About() {
                 </p>
               ))}
             </motion.div>
-          </div> */}
+          </div>
             {/* <motion.div
               className="flex gap-12 md:gap-64 w-max h-[5vh]"
               animate={{ x: ["-50%", "0%"] }}

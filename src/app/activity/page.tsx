@@ -13,16 +13,7 @@ export default function Activity() {
     <section className="h-screen overflow-hidden">
       <Header title="Activity" />
 
-      <div className="h-[85vh] overflow-scroll w-full flex flex-col justify-start items-center">
-        {/* <Timeline
-          className=""
-          position="right"
-          sx={{
-            "& .MuiTimelineItem-root:before": {
-              display: "none",
-            },
-          }}
-        > */}
+      <div className="h-[85vh] overflow-scroll w-full flex flex-col justify-start items-center pt-6">
         {data.activities &&
           data.activities.map((item, i) => (
             <CustomTimeline

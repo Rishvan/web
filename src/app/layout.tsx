@@ -11,8 +11,8 @@ const inter = Rajdhani({
 });
 
 export const metadata: Metadata = {
-  title: "Rishvan M",
-  description: "Personal Website",
+  title: "Portfolio",
+  description: "Personal Portfolio Website",
 };
 
 export default function RootLayout({
@@ -22,13 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
       <body className={inter.className}>
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
-      />
-        {children}</body>
+        <Particles
+          className="absolute inset-0 -z-10 animate-fade-in"
+          quantity={100}
+        />
+        {children}
+      </body>
     </html>
   );
 }
