@@ -1,4 +1,5 @@
 import { TimelineConnector, TimelineItem, TimelineSeparator } from "@mui/lab";
+import Image from "next/image";
 import Link from "next/link";
 type Props = {
   last: boolean;
@@ -12,7 +13,7 @@ function CustomTimeline({ item, last }: Props) {
 
       <div className="flex gap-2 w-full">
         <div className="mb-6 ms-4 p-2 w-1/2">
-       <img src="" alt="image" className="w-full aspect-video" />
+          <Image src="" alt="image" className="w-full aspect-video" />
         </div>
         <div className="mb-6 ms-4 p-2 w-1/2">
           {item.date && (

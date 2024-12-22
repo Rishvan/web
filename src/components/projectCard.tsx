@@ -6,6 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -25,7 +26,7 @@ export default function ProjectCard({
   return (
     <div className="relative cardStyle group overflow-hidden rounded-lg shadow-lg ">
       {/* Background Image */}
-      <img
+      <Image
         src={`/assets/projects/${imageUrl}.jpg`}
         alt="Card Background"
         className="w-full h-full object-cover group-hover:blur-sm group-hover:scale-125 transition-all duration-300  backdrop--0"

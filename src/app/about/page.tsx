@@ -3,6 +3,7 @@ import _ from "lodash";
 import data from "@/data/data.json";
 import Header from "@/components/header";
 import { motion, useTransform } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
   const { aboutMe } = data;
@@ -41,13 +42,12 @@ export default function About() {
       <Header title="About" />
       <div className=" overflow-scroll w-full  text-white">
         <div className="w-full flex justify-center">
-
-        <img
-          src={`/assets/me.png`}
-          alt="Card Background"
-          className="w-80 aspect-[2/3] object-contain group-hover:blur-sm hover:scale-125 transition-all duration-300  backdrop--0"
+          <Image
+            src={`/assets/me.png`}
+            alt="Card Background"
+            className="w-80 aspect-[2/3] object-contain group-hover:blur-sm hover:scale-125 transition-all duration-300  backdrop--0"
           />
-          </div>
+        </div>
 
         <div className="flex flex-col h-full justify-between pb-12 ">
           <div className="p-8 pt-2 w-full h-full  text-sm lg:text-xl   text-justify lg:p-16 lg:pt-2  flex justify-center indent-7">
@@ -70,7 +70,7 @@ export default function About() {
               ))}
             </motion.div>
           </div>
-            {/* <motion.div
+          {/* <motion.div
               className="flex gap-12 md:gap-64 w-max h-[5vh]"
               animate={{ x: ["-50%", "0%"] }}
               transition={{ duration: 100, ease: "linear", repeat: Infinity }}
