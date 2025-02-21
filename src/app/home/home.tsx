@@ -4,12 +4,12 @@ import data from "../../data/data.json";
 import Link from "next/link";
 import { silkscreen } from "@/common/function";
 import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 // import RobotScene from "@/components/robotScene";
 
-const RobotScene = dynamic(() => import("@/components/objects/robotScene"), {
-  ssr: false,
-});
+// const RobotScene = dynamic(() => import("@/components/objects/robotScene"), {
+//   ssr: false,
+// });
 
 export default function HomePage() {
   const [screenWidth, setScreenWidth] = useState<number>(0);
@@ -110,9 +110,9 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-      <div id="container3d" className="z-0">
+      {/* <div id="container3d" className="z-0">
         <RobotScene />
-      </div>
+      </div> */}
     </section>
   );
 }
