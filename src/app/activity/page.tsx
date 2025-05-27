@@ -1,10 +1,7 @@
 import _ from "lodash";
-import { Timeline } from "@mui/lab";
-import CustomTimeline from "@/components/timeLine";
-import data from "../../data/data.json";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+// import { Timeline } from "@mui/lab";
 import Header from "@/components/header";
+// import { Chrono } from 'react-chrono';
 
 export default function Activity() {
   // const router = useRouter();
@@ -13,7 +10,7 @@ export default function Activity() {
     <section className="h-screen overflow-hidden">
       <Header title="Activity" />
 
-      <div className="h-[85vh] overflow-scroll w-full flex flex-col justify-start items-center pt-6">
+      {/* <div className="h-[85vh] overflow-scroll w-full flex flex-col justify-start items-center pt-6">
         {data.activities &&
           data.activities.map((item, i) => (
             <CustomTimeline
@@ -22,8 +19,10 @@ export default function Activity() {
               key={item.id}
             />
           ))}
-        {/* </Timeline> */}
-      </div>
+        
+      </div> */}
+
+      {/* <Chrono items={items} mode="HORIZONTAL" itemWidth={150} showSingle /> */}
     </section>
   );
 }
