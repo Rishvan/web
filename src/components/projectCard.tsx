@@ -29,6 +29,8 @@ export default function ProjectCard({
       <Image
         src={`/assets/projects/${imageUrl}.jpg`}
         alt="Card Background"
+        width={200}
+        height={200}
         className="w-full h-full object-cover group-hover:blur-sm group-hover:scale-125 transition-all duration-300  backdrop--0"
       />
       <div className="absolute inset-0 bg-gray-700 opacity-60"></div>

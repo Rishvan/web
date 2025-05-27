@@ -51,7 +51,10 @@ export default function HomePage() {
             );
           })}
         </div>
-        <ul
+        <div>
+          {data.description}
+        </div>
+        {/* <ul
           className={
             "flex w-full items-center  justify-center md:justify-start gap-6 pt-2 pb-4 md:pb-0 text-sm md:text-xl"
           }
@@ -68,7 +71,7 @@ export default function HomePage() {
               </li>
             );
           })}
-        </ul>
+        </ul> */}
       </div>
       <div className="flex md:justify-between w-full flex-col md:flex-row gap-2 pb-20 z-40">
         <div className="flex gap-3 md:gap-12">
@@ -106,7 +109,7 @@ export default function HomePage() {
             })}
           </div>
           <div className="text-gray-300 text-sm md:text-md   hover:text-white">
-            <span>{"© Rishvan M. 2024 All rights reserved."}</span>
+            <span>{"© Rishvan M. 2025 All rights reserved."}</span>
           </div>
         </div>
       </div>

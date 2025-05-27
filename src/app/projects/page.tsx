@@ -1,11 +1,6 @@
 import _ from "lodash";
-import { Timeline } from "@mui/lab";
-import CustomTimeline from "@/components/timeLine";
 import data from "../../data/data.json";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import ProjectCard from "@/components/projectCard";
-import { silkscreen } from "@/common/function";
 import Header from "@/components/header";
 
 export default function Projects() {
