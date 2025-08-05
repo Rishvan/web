@@ -92,6 +92,14 @@
       "description": "Personal website using Next.js to highlight my professional journey, showcasing my projects, skills, and ongoing activities. It's a dynamic platform reflecting my creativity and technical expertise.",
       "languages": ["Next JS"],
       "url": "portfolio"
+    },
+    {
+      "id": 1,
+      "title": "Personal Portfolio",
+      "subTitle": "My Personal Portfolio Website",
+      "description": "Personal website using Next.js to highlight my professional journey, showcasing my projects, skills, and ongoing activities. It's a dynamic platform reflecting my creativity and technical expertise.",
+      "languages": ["Next JS"],
+      "url": "animal"
     }
   ]
 }
