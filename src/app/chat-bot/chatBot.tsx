@@ -32,6 +32,20 @@ const ChatBot = () => {
     setSessionId(sessionId);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        open &&
+        event.target instanceof HTMLElement &&
+        !event.target.closest(".chat-bot")
+      ) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [open]);
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
@@ -68,9 +82,10 @@ const ChatBot = () => {
     }
   }
 
-  const handleSend = async () => {
-    if (!input.trim()) return;
-    const userMessage: ChatMessage = { role: "user", text: input };
+  const handleSend = async (msg?: string) => {
+    if (!input.trim() && !msg) return;
+
+    const userMessage: ChatMessage = { role: "user", text: msg ?? input };
     setHistory((prev) => [...prev, userMessage]);
     setInput("");
 
@@ -92,10 +107,18 @@ const ChatBot = () => {
   };
 
   return open ? (
-    <Card className="z-[999]  fixed bottom-0 sm:bottom-20 sm:right-10 w-full sm:w-1/4 h-2/3  bg-white rounded-t-lg shadow-lg flex flex-col">
-      <CardContent className="p-4 flex flex-col h-full">
-        <div className="flex justify-between items-center mb-4">
-          <h3 className="font-semibold text-sm">Flash Bot</h3>
+    <Card className="chat-bot z-[999] fixed bottom-0 sm:bottom-20 sm:right-10 w-full sm:w-1/4 h-2/3  bg-white rounded-t-lg shadow-lg flex flex-col">
+      <CardContent className="p-4 flex flex-col h-full px-5">
+        <div className="flex justify-between items-center ">
+          <div className="flex items-end justify-center gap-2">
+            <Image
+              src="/assets/icons/robot.svg"
+              width={40}
+              height={40}
+              alt="Robot icon"
+            />
+            <h3 className="font-semibold text-lg">FLasH Bot</h3>
+          </div>
           <button
             onClick={() => setOpen(false)}
             className="p-1 hover:bg-gray-100 rounded"
@@ -116,26 +139,50 @@ const ChatBot = () => {
               Start the conversation...
             </span>
           )}
-          {history.map((msg, idx) => (
-            <div
-              key={idx}
-              className={`flex ${
-                msg.role === "user" ? "justify-end" : "justify-start"
-              }`}
-            >
+          {history.map((msg, idx) => {
+            return (
               <div
-                className={`px-4 py-2 rounded-lg max-w-xs break-words ${
-                  msg.role === "user"
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-secondary text-secondary-foreground"
+                key={idx}
+                className={`flex ${
+                  msg.role === "user" ? "justify-end" : "justify-start"
                 }`}
               >
-                {renderMessage(msg.text)}
+                <div
+                  className={`px-4 py-2 max-w-xs break-words border-2 ${
+                    msg.role === "user"
+                      ? "bg-primary text-primary-foreground  rounded-br-xl rounded-l-xl"
+                      : "bg-secondary text-secondary-foreground rounded-r-xl rounded-bl-xl"
+                  } ${msg.role === "model" ? "bg-gray-100" : ""}`}
+                >
+                  {renderMessage(msg.text)}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
           <div ref={messagesEndRef} />
         </div>
+        {/* <div className="pb-2 flex gap-2 cursor-pointer chat-bot">
+          {history.length < 1 &&
+            ["Hai", "About Rishvan"].map((e, i) => {
+              return (
+                <div
+                  key={i}
+                  onClick={() => {
+                    handleSend(e);
+                  }}
+                  className="p-1 rounded-lg border w-max"
+                >
+                  {e}
+                </div>
+              );
+            })}
+        </div> */}
+
+        {isModelThinking && (
+          <div className="flex items-center space-x-1  p-4 font-extrabold text-gray-300">
+            <span className="">Typing . . .</span>
+          </div>
+        )}
 
         {/* Input form - fixed at bottom */}
         <form
@@ -153,7 +200,12 @@ const ChatBot = () => {
             className="flex-1"
           />
           <Button type="submit" disabled={isModelThinking || !input.trim()}>
-            {isModelThinking ? "Thinking..." : "Send"}
+            <Image
+              src="/assets/icons/send.svg"
+              width={20}
+              height={20}
+              alt="Close icon"
+            />
           </Button>
         </form>
       </CardContent>
