@@ -107,7 +107,7 @@ const ChatBot = () => {
   };
 
   return open ? (
-    <Card className="chat-bot z-[999] fixed bottom-0 sm:bottom-20 sm:right-10 w-full sm:w-1/4 h-2/3  bg-white rounded-t-lg shadow-lg flex flex-col">
+    <Card className="chat-bot z-[999] fixed bottom-0 sm:bottom-20 sm:right-10 w-full sm:w-1/4 h-screen sm:h-2/3  bg-white rounded-t-lg shadow-lg flex flex-col">
       <CardContent className="p-4 flex flex-col h-full px-5">
         <div className="flex justify-between items-center ">
           <div className="flex items-end justify-center gap-2">
