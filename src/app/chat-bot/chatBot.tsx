@@ -107,9 +107,9 @@ const ChatBot = () => {
   };
 
   return open ? (
-    <Card className="chat-bot z-[999] fixed bottom-0 sm:bottom-20 sm:right-10 w-full sm:w-1/4 h-svh sm:h-2/3  bg-white rounded-t-lg shadow-lg flex flex-col">
-      <CardContent className="p-4 flex flex-col h-full px-5">
-        <div className="flex justify-between items-center ">
+    <Card className="chat-bot z-[999] fixed bottom-0 sm:bottom-20 pb-6 sm:right-10 w-full sm:w-1/4 h-svh sm:h-2/3  bg-white rounded-t-lg shadow-lg flex flex-col">
+      <CardContent className="p-0 flex flex-col h-full px-5">
+        <div className="flex justify-between items-center p-4 border-b">
           <div className="flex items-end justify-center gap-2">
             <Image
               src="/assets/icons/robot.svg"
@@ -136,7 +136,9 @@ const ChatBot = () => {
         <div className="flex-1 flex flex-col gap-2 overflow-y-auto bg-muted rounded p-3 mb-4">
           {history.length === 0 && (
             <span className="text-muted-foreground text-sm">
-              Start the conversation...
+              {renderMessage(
+                "Start the conversation..., To Know more about `Rishvan`, type `About Rishvan` or `Hai`"
+              )}
             </span>
           )}
           {history.map((msg, idx) => {
@@ -204,6 +206,7 @@ const ChatBot = () => {
               src="/assets/icons/send.svg"
               width={20}
               height={20}
+              className=""
               alt="Close icon"
             />
           </Button>

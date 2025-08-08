@@ -1,6 +1,6 @@
 {
   "name": "Rishvan.M",
-  "description":"Software developer in United Arab Emirates",
+  "description": "Software developer in United Arab Emirates",
   "designations": [
     "Full Stack Developer",
     "Flutter Developer",
@@ -28,20 +28,11 @@
   ],
   "cards": [
     {
-      "title": "Activities",
-      "description": "",
-      "url": "/activity"
-    },
-    {
       "title": "Projects",
       "description": "",
       "url": "/projects"
-    },
-    {
-      "title": "About",
-      "description": "",
-      "url": "/about"
     }
+    
   ],
   "activities": [
     {
@@ -94,12 +85,12 @@
       "url": "portfolio"
     },
     {
-      "id": 1,
-      "title": "Personal Portfolio",
-      "subTitle": "My Personal Portfolio Website",
-      "description": "Personal website using Next.js to highlight my professional journey, showcasing my projects, skills, and ongoing activities. It's a dynamic platform reflecting my creativity and technical expertise.",
-      "languages": ["Next JS"],
-      "url": "animal"
+      "id": 2,
+      "title": "FLasH Bot",
+      "subTitle": "My Personal Chat Bot",
+      "description": "FLasH Bot is a personal AI Assistant designed to assist with various tasks and provide information. It integrates seamlessly with messaging platforms, offering quick responses and helpful interactions.",
+      "languages": [],
+      "url": "robot"
     }
   ]
 }

@@ -51,9 +51,7 @@ export default function HomePage() {
             );
           })}
         </div>
-        <div>
-          {data.description}
-        </div>
+        <div>{data.description}</div>
         {/* <ul
           className={
             "flex w-full items-center  justify-center md:justify-start gap-6 pt-2 pb-4 md:pb-0 text-sm md:text-xl"
@@ -75,6 +73,19 @@ export default function HomePage() {
       </div>
       <div className="flex md:justify-between w-full flex-col md:flex-row gap-2 pb-20 z-40">
         <div className="flex gap-3 md:gap-12">
+          {/* 
+             {
+                "title": "Activities",
+                "description": "",
+                "url": "/activity"
+              },
+
+              {
+                "title": "About",
+                "description": "",
+                "url": "/about"
+              } 
+          */}
           {data.cards &&
             data.cards.map((card: Cards, i) => {
               return (
