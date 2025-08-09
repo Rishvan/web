@@ -31,40 +31,43 @@
       "title": "Projects",
       "description": "",
       "url": "/projects"
+    },
+    {
+      "title": "Activities",
+      "description": "",
+      "url": "/activity"
+    },
+
+    {
+      "title": "About",
+      "description": "",
+      "url": "/about"
     }
-    
   ],
   "activities": [
     {
-      "id": 0,
-      "title": "Sample title 1",
-      "date": "March 2016",
-      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,",
-      "url": "www.google.com"
+      "title": "Built a Department App",
+      "date": "Dec 2023",
+      "description": "Created a student-friendly app using Flutter & Laravel for accessing study materials and resources.",
+      "tag": "Flutter"
     },
     {
-      "id": 1,
-      "title": "Sample title 2",
-      "date": "March 2016",
-      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
+      "title": "Portfolio Website Launch",
+      "date": "July 2024",
+      "description": "Designed and launched my personal portfolio with Next.js & TailwindCSS.",
+      "tag": "Next.js"
     },
     {
-      "id": 2,
-      "title": "Sample title 2",
-      "date": "March 2016",
-      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
+      "title": "Working as a Full Stack Developer",
+      "date": "August 2024",
+      "description": "Currently working as a Full Stack Developer, focusing on MERN stack applications. at Smart Global Domestic Workers services LLC.",
+      "tag": "Mern Stack"
     },
     {
-      "id": 3,
-      "title": "Sample title 2",
-      "date": "March 2016",
-      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
-    },
-    {
-      "id": 4,
-      "title": "Sample title 2",
-      "date": "March 2016",
-      "description": " Get access to over 20+ pages including a dashboard layout, charts,kanban board,"
+      "title": "FLasH Bot",
+      "date": "August 2025",
+      "description": "Developed FLasH Bot, a personal AI assistant for quick responses and task management.",
+      "tag": "AI Assistant"
     }
   ],
   "projects": [
