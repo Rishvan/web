@@ -46,17 +46,12 @@
   ],
   "activities": [
     {
-      "title": "Built a Department App",
-      "date": "Dec 2023",
-      "description": "Created a student-friendly app using Flutter & Laravel for accessing study materials and resources.",
-      "tag": "Flutter"
+      "title": "FLasH Bot",
+      "date": "August 2025",
+      "description": "Developed FLasH Bot, a personal AI assistant for quick responses and task management.",
+      "tag": "AI Assistant"
     },
-    {
-      "title": "Portfolio Website Launch",
-      "date": "July 2024",
-      "description": "Designed and launched my personal portfolio with Next.js & TailwindCSS.",
-      "tag": "Next.js"
-    },
+
     {
       "title": "Working as a Full Stack Developer",
       "date": "August 2024",
@@ -64,10 +59,17 @@
       "tag": "Mern Stack"
     },
     {
-      "title": "FLasH Bot",
-      "date": "August 2025",
-      "description": "Developed FLasH Bot, a personal AI assistant for quick responses and task management.",
-      "tag": "AI Assistant"
+      "title": "Portfolio Website Launch",
+      "date": "July 2024",
+      "description": "Designed and launched my personal portfolio with Next.js & TailwindCSS.",
+      "tag": "Next.js"
+    },
+
+    {
+      "title": "Built a Department App",
+      "date": "Dec 2023",
+      "description": "Created a student-friendly app using Flutter & Laravel for accessing study materials and resources.",
+      "tag": "Flutter"
     }
   ],
   "projects": [
