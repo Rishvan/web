@@ -12,6 +12,8 @@ import { div } from "framer-motion/client";
 //   ssr: false,
 // });
 
+const [{ name, description, cards, social_icons }] = data;
+
 export default function HomePage() {
   const [screenWidth, setScreenWidth] = useState<number>(0);
 
@@ -35,7 +37,7 @@ export default function HomePage() {
           <div
             className={`${silkscreen.className} text-5xl md:text-7xl text-center flex`}
           >
-            {data.name.split("").map((e) => {
+            {name.split("").map((e) => {
               return (
                 <p
                   key={e}
@@ -50,13 +52,12 @@ export default function HomePage() {
               );
             })}
           </div>
-          <div>{data.description}</div>
-       
+          <div>{description}</div>
         </div>
         <div className="flex md:justify-between w-full flex-col md:flex-row gap-2 pb-2 z-40">
           <div className="flex gap-3 md:gap-12">
-            {data.cards &&
-              data.cards.map((card: Cards, i) => {
+            {cards &&
+              cards.map((card: Cards, i) => {
                 return (
                   <div key={i}>
                     <Link href={`${card.url}`}>
@@ -70,7 +71,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col md:flex-row gap-1 md:gap-12">
             <div>
-              {data.social_icons.map((item: SocialTcons, i) => {
+              {social_icons.map((item: SocialTcons, i) => {
                 return (
                   <Link href={`${item.url}`} target="_blank" key={i}>
                     <button
@@ -93,7 +94,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-       
       </section>
     </div>
   );

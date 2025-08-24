@@ -1,101 +1,117 @@
-{
-  "name": "Rishvan.M",
-  "description": "Software developer in United Arab Emirates",
-  "designations": [
-    "Full Stack Developer",
-    "Flutter Developer",
-    "Graphic Designer"
-  ],
-  "mobile-designations": ["Software Developer"],
-  "aboutMe": "I am a dedicated software developer with expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js) and Flutter, specializing in building dynamic, responsive, and scalable web and mobile applications. I utilize tools like Redux for the MERN stack and BLoC in Flutter to ensure efficient state management and clean architecture. Beyond development, I am curious about cutting-edge technologies like Augmented Reality (AR), Machine Learning (ML), and Artificial Intelligence (AI), which inspire me to explore innovative solutions and future possibilities in app development. With a commitment to writing clean, maintainable code and staying current with industry trends, I strive to create impactful applications that solve real-world problems and enhance user experiences.",
-  "social_icons": [
-    {
-      "icon": "github",
-      "url": "http://github.com/Rishvan"
-    },
-    {
-      "icon": "linkedin",
-      "url": "http://linkedin.com/in/rishvan-m-8805a623a"
-    },
-    {
-      "icon": "instagram",
-      "url": "https://www.instagram.com/r___van_"
-    },
-    {
-      "icon": "whatsapp",
-      "url": "https://wa.me/+919895465354"
-    }
-  ],
-  "cards": [
-    {
-      "title": "Projects",
-      "description": "",
-      "url": "/projects"
-    },
-    {
-      "title": "Activities",
-      "description": "",
-      "url": "/activity"
-    },
+[
+  {
+    "name": "Rishvan.M",
+    "description": "Software developer in United Arab Emirates",
+    "designations": [
+      "Full Stack Developer",
+      "Flutter Developer",
+      "Graphic Designer"
+    ],
+    "mobile-designations": ["Software Developer"],
+    "aboutMe": "I am a dedicated software developer with expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js) and Flutter, specializing in building dynamic, responsive, and scalable web and mobile applications. I utilize tools like Redux for the MERN stack and BLoC in Flutter to ensure efficient state management and clean architecture. Beyond development, I am curious about cutting-edge technologies like Augmented Reality (AR), Machine Learning (ML), and Artificial Intelligence (AI), which inspire me to explore innovative solutions and future possibilities in app development. With a commitment to writing clean, maintainable code and staying current with industry trends, I strive to create impactful applications that solve real-world problems and enhance user experiences.",
+    "social_icons": [
+      {
+        "icon": "github",
+        "url": "http://github.com/Rishvan"
+      },
+      {
+        "icon": "linkedin",
+        "url": "http://linkedin.com/in/rishvan-m-8805a623a"
+      },
+      {
+        "icon": "instagram",
+        "url": "https://www.instagram.com/r___van_"
+      },
+      {
+        "icon": "whatsapp",
+        "url": "https://wa.me/+919895465354"
+      }
+    ],
+    "cards": [
+      {
+        "title": "Projects",
+        "description": "",
+        "url": "/projects"
+      },
+      {
+        "title": "Activities",
+        "description": "",
+        "url": "/activity"
+      },
 
-    {
-      "title": "About",
-      "description": "",
-      "url": "/about"
-    }
-  ],
-  "activities": [
-    {
-      "title": "FLasH Bot",
-      "date": "August 2025",
-      "description": "Developed FLasH Bot, a personal AI assistant for quick responses and task management.",
-      "tag": "AI Assistant"
-    },
+      {
+        "title": "About",
+        "description": "",
+        "url": "/about"
+      }
+    ],
+    "activities": [
+      {
+        "title": "FLasH Bot",
+        "date": "August 2025",
+        "description": "Developed FLasH Bot, a personal AI assistant for quick responses and task management.",
+        "tag": "AI Assistant"
+      },
+      {
+        "title": "Expense Tracker App",
+        "date": "June 2025",
+        "description": "Developed Expense Tracker App, a personal finance management tool.",
+        "tag": "Finance"
+      },
 
-    {
-      "title": "Working as a Full Stack Developer",
-      "date": "August 2024",
-      "description": "Currently working as a Full Stack Developer, focusing on MERN stack applications. at Smart Global Domestic Workers services LLC.",
-      "tag": "Mern Stack"
-    },
-    {
-      "title": "Portfolio Website Launch",
-      "date": "July 2024",
-      "description": "Designed and launched my personal portfolio with Next.js & TailwindCSS.",
-      "tag": "Next.js"
-    },
+      {
+        "title": "Working as a Full Stack Developer",
+        "date": "August 2024",
+        "description": "Started working as a Full Stack Developer, focusing on MERN stack applications. at Smart Global Domestic Workers services LLC.",
+        "tag": "Mern Stack"
+      },
+      {
+        "title": "Portfolio Website Launch",
+        "date": "July 2024",
+        "description": "Designed and launched my personal portfolio with Next.js & TailwindCSS.",
+        "tag": "Next.js"
+      },
 
-    {
-      "title": "Built a Department App",
-      "date": "Dec 2023",
-      "description": "Created a student-friendly app using Flutter & Laravel for accessing study materials and resources.",
-      "tag": "Flutter"
-    }
-  ],
-  "projects": [
-    {
-      "id": 0,
-      "title": "Amal CS Hub",
-      "subTitle": "The Computer Science Department App",
-      "description": "The Computer Science Department app offers a comprehensive platform for students. Access study materials, a question bank, and stay updated with course and faculty details. Explore a gallery showcasing department activities and find important links to enhance your academic journey.",
-      "languages": ["Flutter", "laravel"],
-      "url": "amalCSHub"
-    },
-    {
-      "id": 1,
-      "title": "Personal Portfolio",
-      "subTitle": "My Personal Portfolio Website",
-      "description": "Personal website using Next.js to highlight my professional journey, showcasing my projects, skills, and ongoing activities. It's a dynamic platform reflecting my creativity and technical expertise.",
-      "languages": ["Next JS"],
-      "url": "portfolio"
-    },
-    {
-      "id": 2,
-      "title": "FLasH Bot",
-      "subTitle": "My Personal Chat Bot",
-      "description": "FLasH Bot is a personal AI Assistant designed to assist with various tasks and provide information. It integrates seamlessly with messaging platforms, offering quick responses and helpful interactions.",
-      "languages": [],
-      "url": "robot"
-    }
-  ]
-}
+      {
+        "title": "Built a Department App",
+        "date": "Dec 2023",
+        "description": "Created a student-friendly app using Flutter & Laravel for accessing study materials and resources.",
+        "tag": "Flutter"
+      }
+    ],
+    "projects": [
+      {
+        "id": 3,
+        "title": "FLasH Bot",
+        "subTitle": "My Personal Chat Bot",
+        "description": "FLasH Bot is a personal AI Assistant designed to assist with various tasks and provide information. It integrates seamlessly with messaging platforms, offering quick responses and helpful interactions.",
+        "languages": [],
+        "url": "robot"
+      },
+      {
+        "id": 2,
+        "title": "Expense Tracker App",
+        "subTitle": "My Personal Expense Tracker",
+        "description": "Expense Tracker App is a personal finance management tool designed to help users track their expenses and manage their budgets effectively.",
+        "languages": ["Flutter", "Node JS"],
+        "url": "expense-tracker"
+      },
+      {
+        "id": 1,
+        "title": "Personal Portfolio",
+        "subTitle": "My Personal Portfolio Website",
+        "description": "Personal website using Next.js to highlight my professional journey, showcasing my projects, skills, and ongoing activities. It's a dynamic platform reflecting my creativity and technical expertise.",
+        "languages": ["Next JS"],
+        "url": "portfolio"
+      },
+      {
+        "id": 0,
+        "title": "Amal CS Hub",
+        "subTitle": "The Computer Science Department App",
+        "description": "The Computer Science Department app offers a comprehensive platform for students. Access study materials, a question bank, and stay updated with course and faculty details. Explore a gallery showcasing department activities and find important links to enhance your academic journey.",
+        "languages": ["Flutter", "laravel"],
+        "url": "amalCSHub"
+      }
+    ]
+  }
+]

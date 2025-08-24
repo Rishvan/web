@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import { motion } from "framer-motion";
 import data from "../../data/data.json";
 
-const { activities } = data;
+const [{ activities }] = data;
 
 export default function ActivityPage() {
   return (
@@ -26,7 +26,9 @@ export default function ActivityPage() {
                 <span className="inline-block bg-blue-100 text-blue-600 text-xs px-3 py-1 rounded-full mb-2">
                   {activity.tag}
                 </span>
-                <h2 className="text-xl text-black font-semibold mb-2">{activity.title}</h2>
+                <h2 className="text-xl text-black font-semibold mb-2">
+                  {activity.title}
+                </h2>
                 <p className="text-sm text-gray-800 mb-3">{activity.date}</p>
                 <p className="text-gray-800 text-sm">{activity.description}</p>
               </motion.div>
