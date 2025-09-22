@@ -5,7 +5,10 @@ import ReactMarkdown from "react-markdown";
 import { Card, CardContent } from "./components/card";
 import { Input } from "./components/input";
 import { Button } from "./components/button";
-import axios from "axios";
+import robot from "../../assets/icons/robot.svg";
+import chat from "../../assets/icons/chat.svg";
+import close from "../../assets/icons/close.svg";
+import send from "../../assets/icons/send.svg";
 
 export type ChatMessage = {
   role: "user" | "model";
@@ -112,7 +115,7 @@ const ChatBot = () => {
         <div className="flex justify-between items-center p-4 border-b">
           <div className="flex items-end justify-center gap-2">
             <Image
-              src="/assets/icons/robot.svg"
+              src={robot}
               width={40}
               height={40}
               alt="Robot icon"
@@ -124,7 +127,7 @@ const ChatBot = () => {
             className="p-1 hover:bg-gray-100 rounded"
           >
             <Image
-              src="/assets/icons/close.svg"
+              src={close}
               width={20}
               height={20}
               alt="Close icon"
@@ -203,7 +206,7 @@ const ChatBot = () => {
           />
           <Button type="submit" disabled={isModelThinking || !input.trim()}>
             <Image
-              src="/assets/icons/send.svg"
+              src={send}
               width={20}
               height={20}
               className=""
@@ -219,7 +222,7 @@ const ChatBot = () => {
       className="z-[999] fixed bottom-20 sm:bottom-32 right-4 sm:right-10 w-[60px] h-[60px] bg-white rounded-full p-4 shadow-lg flex items-center justify-center cursor-pointer hover:shadow-xl transition-shadow"
     >
       <Image
-        src="/assets/icons/chat.svg"
+        src={chat}
         width={30}
         height={30}
         alt="Chat icon"

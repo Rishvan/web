@@ -6,7 +6,7 @@
 }
 
 body {
-  @apply backGround bg-center bg-[url('../../public/assets/bg.jpg')];
+  @apply backGround bg-center overflow-x-hidden;
 }
 
 .timeline-button {

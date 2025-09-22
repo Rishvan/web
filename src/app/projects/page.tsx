@@ -3,6 +3,19 @@ import data from "../../data/data.json";
 import ProjectCard from "@/components/projectCard";
 import Header from "@/components/header";
 
+import robot from "../../assets/projects/robot.jpg";
+import expenseTracker from "../../assets/projects/expenseTracker.jpg";
+import portfolio from "../../assets/projects/portfolio.jpg";
+import amalCSHub from "../../assets/projects/amalCSHub.jpg";
+import { StaticImageData } from "next/image";
+
+const projectData: Record<string, StaticImageData> = {
+  robot,
+  expenseTracker,
+  portfolio,
+  amalCSHub,
+};
+
 export default function Projects() {
   const [{ projects }] = data;
   // const router = useRouter();
@@ -18,7 +31,7 @@ export default function Projects() {
                 key={i}
                 title={e.title}
                 subTitle={e.subTitle}
-                imageUrl={e.url}
+                imageUrl={projectData[e?.url]}
                 description={e.description}
                 languages={e.languages}
               />

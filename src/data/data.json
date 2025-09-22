@@ -94,7 +94,7 @@
         "subTitle": "My Personal Expense Tracker",
         "description": "Expense Tracker App is a personal finance management tool designed to help users track their expenses and manage their budgets effectively.",
         "languages": ["Flutter", "Node JS"],
-        "url": "expense-tracker"
+        "url": "expenseTracker"
       },
       {
         "id": 1,

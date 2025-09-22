@@ -2,6 +2,7 @@
 import Header from "@/components/header";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import me from "../../assets/me.png";
 
 export default function AboutPage() {
   return (
@@ -11,7 +12,7 @@ export default function AboutPage() {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
           <Image
-            src="/assets/me.png" // Replace with your image path
+            src={me} // Replace with your image path
             alt="Rishvan M"
             className="w-40 h-40 object-cover rounded-full"
             // className="w-40 h-40 object-cover rounded-full shadow-lg"

@@ -1,16 +1,22 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import data from "../../data/data.json";
 import Link from "next/link";
 import { silkscreen } from "@/common/function";
 import { useEffect, useState } from "react";
-import { div } from "framer-motion/client";
-// import dynamic from "next/dynamic";
-// import RobotScene from "@/components/robotScene";
 
-// const RobotScene = dynamic(() => import("@/components/objects/robotScene"), {
-//   ssr: false,
-// });
+import github from "../../assets/icons/github.svg";
+import linkedin from "../../assets/icons/linkedin.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import whatsapp from "../../assets/icons/whatsapp.svg";
+
+
+const iconsData: Record<string, StaticImageData> = {
+  github,
+  linkedin,
+  instagram,
+  whatsapp,
+};
 
 const [{ name, description, cards, social_icons }] = data;
 
@@ -79,7 +85,7 @@ export default function HomePage() {
                       key={i}
                     >
                       <Image
-                        src={`assets/icons/${item.icon}.svg`}
+                        src={iconsData[item.icon]}
                         width={500}
                         height={500}
                         alt="Picture of the author"

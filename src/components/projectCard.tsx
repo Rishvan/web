@@ -1,17 +1,11 @@
 "use client";
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 import Image from "next/image";
 
 type Props = {
   title: string;
   description: string;
-  imageUrl: string;
+  imageUrl: any;
   subTitle: string;
   languages?: string[];
 };
@@ -25,9 +19,8 @@ export default function ProjectCard({
 }: Props) {
   return (
     <div className="relative cardStyle group overflow-hidden rounded-lg shadow-lg ">
-      {/* Background Image */}
       <Image
-        src={`/assets/projects/${imageUrl}.jpg`}
+        src={imageUrl}
         alt="Card Background"
         width={200}
         height={200}
